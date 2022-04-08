@@ -1,0 +1,114 @@
+/*reset css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+:root {
+    --verde-claro: #3db36b;
+    --verde-escuro: #0f642f;
+    --branco: #fff;
+    --black: #000;
+    --cinza-claro: #eee;
+}
+
+/*Cabeçalho*/
+header {
+    background-color: var(--verde-claro);
+    color: var(--branco);
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid var(--verde-escuro);
+}
+
+header h1 {
+    font-weight: 800;
+}
+
+/*grid de produtos*/
+.container {
+    background-color: var(--branco);
+    padding: 50px;
+    min-height: 60vh;
+}
+.products-container {
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 31%;
+    display: inline-block;
+    margin: 1% 1%;
+    padding: 15px;
+}
+
+.products-images {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+#img-1 {
+    background-image: url('../img/img/tenis1.jpg');
+}
+#img-2 {
+    background-image: url('../img/img/tenis2.jpg');
+}
+#img-3 {
+    background-image: url('../img/img/tenis3.jpg');
+}
+#img-4 {
+    background-image: url('../img/img/tenis4.jpg');
+}
+#img-5 {
+    background-image: url('../img/img/tenis5.jpg');
+}
+#img-6 {
+    background-image: url('../img/img/tenis6.jpg');
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: var(--verde-claro);
+    border-left: 5px solid var(--verde-escuro);
+    padding-left: 7px;
+    font-size: 24px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+.bold {
+    font-weight: bold;
+}
+.botao {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: var(--verde-claro);
+    color: var(--branco);
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: .5s;
+}
+.botao:hover {
+    background-color: var(--verde-escuro);
+    border: 1px solid black;
+}
+
+footer {
+    background-color: var(--verde-claro);
+    color: var(--branco);
+    border-top: 3px solid var(--verde-escuro);
+    text-align: center;
+    padding: 30px;
+}
+
