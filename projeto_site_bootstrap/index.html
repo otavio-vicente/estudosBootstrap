@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Projeto - bootstrap</title>
+    <style>
+    
+    * {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .gradient {
+        background: linear-gradient(55deg, #6495ED, #0000CD) !important;
+    }
+
+    .btnMenu {
+        border: 1px solid #fff !important;
+    }
+
+    .menu {
+        background-color: #191970 !important;
+    }
+
+    .nav .nav-item a:hover {
+        color: #B0C4DE !important;
+        transition: .5s;
+    }
+    .logo a:hover{
+        color: #B0C4DE !important;
+        transition: .5s;
+    }
+
+    .rodape {
+        background-color: #191970 !important;
+        border: 0px;
+    }
+
+    .botoes {
+        background-color: #4169E1 !important;
+    }
+
+    </style>
+  </head>
+    <body class="">
+        <!-- header-->
+        <header>
+            <nav class="navbar navbar-dark gradient">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <img class="rounded-circle"src="https://source.unsplash.com/70x70/?logo" alt="Logo da loja">
+                        <a class="navbar-brand text-white" href="#">Quitanda do Zézé</a>
+                    </div>
+                    <button class="btnMenu navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end menu" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h4 class="offcanvas-title pt-3 text-white" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                    <div class="offcanvas-body menu">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Produtos</a>
+                            </li>
+                         </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </header>
+
+        <!--section carousel-->
+        <section>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <imgc src="https://source.unsplash.com/1400x500/?orange" class="d-block w-100 rounded-circle" alt="foto de laranja">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="https://source.unsplash.com/1400x500/?apple" class="d-block w-100" alt="foto de maça">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="https://source.unsplash.com/1400x500/?papaya" class="d-block w-100" alt="foto de papaya">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--section produtos-->
+        <section class="mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center text-white my-3"> <!--m margin p padding-->
+                        <h1>Produtos</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 mb-5">
+                        <div class="card border-primary border-2">
+                            <img src="https://source.unsplash.com/300x200/?fruit orange" class="card-img-top" alt="card de uma laranja"> <!-- card-->
+                            <div class="card-body">
+                                <h5 class="card-title text-centertext-primary text-primary ">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-outline-primary d-grid gap-2">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card border-primary border-2">
+                            <img src="https://source.unsplash.com/300x200/?fruit apple" class="card-img-top" alt="card de uma laranja"> <!-- card-->
+                            <div class="card-body">
+                                <h5 class="card-title text-centertext-primary text-primary ">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-outline-primary d-grid gap-2">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card border-primary border-2">
+                            <img src="https://source.unsplash.com/300x200/?banana" class="card-img-top" alt="card de uma laranja"> <!-- card-->
+                            <div class="card-body">
+                                <h5 class="card-title text-centertext-primary text-primary ">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-outline-primary d-grid gap-2">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card border-primary border-2">
+                            <img src="https://source.unsplash.com/300x200/?limon" class="card-img-top" alt="card de uma laranja"> <!-- card-->
+                            <div class="card-body">
+                                <h5 class="card-title text-center text-primary text-primary">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-outline-primary d-grid gap-2">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card border-primary border-2">
+                            <img src="https://source.unsplash.com/300x200/?pineapple" class="card-img-top" alt="card de uma laranja"> <!-- card-->
+                            <div class="card-body">
+                                <h5 class="card-title text-centertext-primary text-primary ">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-outline-primary d-grid gap-2">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card border-primary border-2">
+                            <img src="https://source.unsplash.com/300x200/?papaya" class="card-img-top" alt="card de uma laranja"> <!-- card-->
+                            <div class="card-body">
+                                <h5 class="card-title text-center text-primary text-primary">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-outline-primary d-grid gap-2">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!--section avisos-->
+        <section class="gradient py-5">
+            <div class="row">
+                <div class="col-sm-12 text-center text-white my-3">
+                    <h1>Horários e Entregas</h1>
+                </div>
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="rodape col-sm-12 text-white py-3">
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item text-white rodape mb-1">
+                                <h2 class="accordion-header text-white" id="panelsStayOpen-headingOne">
+                                <button class=" botoes accordion-button text-white bg-secondary " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    Horário de funcionamento
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+                                        <strong> Funcionamos todos os dias</strong> Incluindo domingo, feriados.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="botoes accordion-item text-white">
+                                <h2 class="accordion-header text-white" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button text-white botoes  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Valor do frete para entregas
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                    <div class="accordion-body">
+                                        <strong>Valor do frete fixo para cidade de Joinville.</strong>  R$ 10 Reais.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="botoes accordion-item text-white mt-1">
+                                <h2 class="accordion-header text-white" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button text-white botoes collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Meios de Pagamento
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                    <div class="accordion-body ">
+                                        <strong>Aceitamos todos os cartões de crédito, débito e pix</strong> Não vendemos FIADO, favor não insistir!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--footer-->
+        <footer>
+            <div class="container-fluid text-center">
+                <div class="row">
+                    <div class="rodape col-sm-12 text-white py-3">
+                        <p class="mb-0">Desenvolvido por Otávio Henrique Vicente &copy; todos os direitos reservados </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>
